@@ -112,3 +112,16 @@ h1, h2 {
     */
     grid: repeat(2, 300px) / repeat(3, 300px)
 }
+
+.grid-6 {
+    display: grid;
+    grid: repeat(2, 300px) / repeat(3, 300px);
+    grid-auto-flow: column;
+    /* grid-auto-flow: row;
+    grid-auto-flow: dense;
+    grid-auto-flow: row dense; */
+}
+
+.grid-6 .box:nth-child(2) {
+    grid-column: 1/2;
+}
