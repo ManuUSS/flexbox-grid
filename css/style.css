@@ -95,3 +95,13 @@ h1, h2 {
     justify-content: flex-end;
     justify-content: space-around; */
 }
+
+.d-flex-5 {
+    display: flex;
+    height: 500px;
+    align-items: flex-start;
+    /* align-items: flex-end;
+    align-items: stretch;
+    align-items: center;
+    align-items: baseline; */
+}
