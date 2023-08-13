@@ -141,10 +141,49 @@ h1, h2 {
     /* column-gap: 4rem;
     row-gap: 2rem; */
     /* Shorthand para las propiedades del gap definidas arriba */
-    gap: 2rem 4rem;
-    
+    gap: 2rem 4rem;   
 }
 
 .grid-8 .box {
     margin: 0;
+}
+
+.grid-9 {
+    display: grid;
+    height: 120rem;
+    grid-template-areas: "header    header    header"
+                         "nav       nav       nav"
+                         "contenido contenido sidebar"
+                         "footer    footer    footer"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2.5fr 1fr 6fr 2.5fr;
+    gap: 4rem;
+    /* Se desborda por el gap agregado */
+    /* grid-template-rows: 25rem 10rem 60rem 25rem; */
+}
+
+.grid-9 .box {
+    background-color: rgb(141, 161, 155);
+    margin: 0;
+}
+
+.grid-9 .box:nth-child(1) {
+    grid-area: header;
+}
+
+.grid-9 .box:nth-child(2) {
+    grid-area: nav;
+}
+
+.grid-9 .box:nth-child(3) {
+    grid-area: contenido;
+}
+
+.grid-9 .box:nth-child(4) {
+    grid-area: sidebar;
+}
+
+.grid-9 .box:nth-child(5) {
+    grid-area: footer;
 }
