@@ -198,4 +198,22 @@ h1, h2 {
     /* El flex shrink afecta en cuanto al tamano se hace mas pequeno */
 }
 
+.d-flex-13 {
+    display: flex;
+}
+
+.d-flex-13 .box {
+    /* flex-basis: 33.3%; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+
+    /* Version corta de las propiedades definidas antes */
+    /* Donde, 
+        primer valor = flex-grow  
+        segundo valor = flex-shrink  
+        tercer valor = flex-basis  
+    */
+    flex: 1 0 33.3%;
+}
+
 
