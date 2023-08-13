@@ -100,5 +100,15 @@ h1, h2 {
     grid-column: 2 / span 2;
     grid-row: 1 / span 2;
     /* El span le dice la cantiad de columnas que tome */
-    
+}
+
+.grid-5 {
+    display: grid;
+    /* grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 300px); */
+    /* Shorthand de las propiedades definidas arriba 
+        primer valor = rows
+        segundo valor = columns
+    */
+    grid: repeat(2, 300px) / repeat(3, 300px)
 }
