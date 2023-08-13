@@ -56,3 +56,21 @@ h1, h2 {
     font-size: 4rem;
     margin-bottom: 2rem;
 }
+
+.grid-1 {
+    display: grid;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3,  300px);
+}
+
+.grid-2 .box:nth-child(2) {
+    /* Modifica el posicionamiento del elemento */
+    /* grid-column-start: 3;
+    grid-column-end: 4; */
+
+    /* Shorthand para las propiedades definidas arriba */
+    grid-column: 3/4;
+}
