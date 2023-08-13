@@ -183,3 +183,19 @@ h1, h2 {
     flex-grow: 1;
 }
 
+.d-flex-12 {
+    display: flex;
+}
+
+.d-flex-12 .box {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.d-flex-12 .box:nth-child(3) {
+    flex-shrink: 2;
+    /* flex-shrink: 1; Valor inicial*/
+    /* El flex shrink afecta en cuanto al tamano se hace mas pequeno */
+}
+
+
