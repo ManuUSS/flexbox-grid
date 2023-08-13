@@ -74,3 +74,17 @@ h1, h2 {
     /* Shorthand para las propiedades definidas arriba */
     grid-column: 3/4;
 }
+
+.grid-3 {
+    display: grid;
+    grid-template-rows: repeat(6, 300px);
+}
+
+.grid-3 .box:nth-child(3) {
+    /* Modifica el posicionamiento del elemento */
+    /* grid-row-start: 1;
+    grid-row-end: 2; */
+
+    /* Shorthand para las propiedades definidas arriba */
+    grid-row: 1/2;
+}
