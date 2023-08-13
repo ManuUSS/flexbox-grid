@@ -130,6 +130,21 @@ h1, h2 {
     display: grid;
     /* grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 2fr repeat(2, 1fr); */
-    
+
     grid: repeat( 2, 1fr ) / repeat( 3, 1fr );
+}
+
+.grid-8 {
+    display: grid;
+    grid: repeat( 2, 20rem ) / repeat( 3, 1fr );
+
+    /* column-gap: 4rem;
+    row-gap: 2rem; */
+    /* Shorthand para las propiedades del gap definidas arriba */
+    gap: 2rem 4rem;
+    
+}
+
+.grid-8 .box {
+    margin: 0;
 }
