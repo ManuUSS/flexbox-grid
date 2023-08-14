@@ -225,3 +225,14 @@ h1, h2 {
 .grid-10 .box:nth-child(5) {
     grid-area: footer;
 }
+
+.grid-11 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    /* align-items: end;
+    align-items: start;
+    align-items: stretch; Por defecto */
+    place-content: center;
+    /* place-content: stretch; Por defecto */
+}
