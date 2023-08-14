@@ -187,3 +187,41 @@ h1, h2 {
 .grid-9 .box:nth-child(5) {
     grid-area: footer;
 }
+
+.grid-10 {
+    display: grid;
+    height: 120rem;
+    /* Shorthand para template-areas template-rows / template-columns */
+    grid-template: "header    header    header" 2.5fr 
+                    "nav       nav       nav" 1fr
+                    "contenido contenido sidebar" 6fr
+                    "footer    footer    footer" 2.5fr
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.grid-10 .box {
+    background-color: rgb(141, 161, 155);
+    margin: 0;
+}
+
+.grid-10 .box:nth-child(1) {
+    grid-area: header;
+}
+
+.grid-10 .box:nth-child(2) {
+    grid-area: nav;
+}
+
+.grid-10 .box:nth-child(3) {
+    grid-area: contenido;
+}
+
+.grid-10 .box:nth-child(4) {
+    grid-area: sidebar;
+}
+
+.grid-10 .box:nth-child(5) {
+    grid-area: footer;
+}
