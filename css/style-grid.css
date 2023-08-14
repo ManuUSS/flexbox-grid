@@ -236,3 +236,13 @@ h1, h2 {
     place-content: center;
     /* place-content: stretch; Por defecto */
 }
+
+.grid-12 {
+    display: grid;
+    /* No funcionan con fr */
+    /* grid-template-columns: repeat( auto-fill, 200px ); */
+    /* grid-template-columns: repeat( auto-fit, 200px ); */
+    
+    /* Con fr en uso */
+    grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ));
+}
